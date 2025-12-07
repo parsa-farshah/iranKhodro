@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ایران خودرو</title>
+    <link rel="stylesheet" href="src/styles/output.css" />
+  </head>
+  <body class="bg-black text-white">
+    <!-- all sections -->
+    <nav
+      class="w-[85%] h-14 md:h-20 rounded-2xl bg-[#FFFFFF1A] absolute left-1/2 top-2 -translate-x-1/2 p-2 backdrop-blur-md"
+    >
+      <!------------------ mobile section ---------------------------->
+      <div class="w-full h-full flex items-center justify-between md:hidden">
+        <!-- menu humburger -->
+        <figure class="w-5 h-5 cursor-pointer">
+          <img
+            class="w-full h-full"
+            src="src/icons/menu-burger.png"
+            alt="menu burger"
+          />
+        </figure>
+        <!-- logo -->
+        <figure class="w-8 h-10">
+          <img
+            class="w-full h-full"
+            src="src/icons/Logo Type.png"
+            alt="menu burger"
+          />
+        </figure>
+        <!-- user -->
+        <figure class="w-5 h-5 cursor-pointer">
+          <img class="w-full h-full" src="src/icons/user.png" alt="user" />
+        </figure>
+      </div>
+      <!-- desktop section -->
+      <div class="w-full h-full items-center justify-between hidden md:flex">
+        <!-- right -->
+        <div class="flex items-center">
+          <!-- logo -->
+          <figure class="w-12 h-16">
+            <img
+              class="w-full h-full object-contain"
+              src="src/icons/logo desktop.png"
+              alt="logo"
+            />
+          </figure>
+          <!-- links -->
+          <ul class="flex gap-4 mr-8">
+            <li><a href="#">خانه</a></li>
+            <li><a href="#">محصولات</a></li>
+            <li><a href="#">شرایط فروش</a></li>
+            <li><a href="#">نمایندگی ها</a></li>
+            <li><a href="#">درباره ما</a></li>
+          </ul>
+        </div>
+        <!-- left -->
+      </div>
+    </nav>
+    <!-------------------------------------- haeder section ------------------------>
+    <header
+      class="w-full h-[600px] bg-[url(../images/bgHeaderMobile.png)] bg-cover"
+    ></header>
+  </body>
+  <script src="src/js/index.js"></script>
+</html>

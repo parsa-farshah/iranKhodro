@@ -1,0 +1,24 @@
+{
+  "name": "irankhodro",
+  "version": "1.0.0",
+  "description": "redeign iran khodro site",
+  "homepage": "https://github.com/parsa-farshah/iranKhodro#readme",
+  "bugs": {
+    "url": "https://github.com/parsa-farshah/iranKhodro/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parsa-farshah/iranKhodro.git"
+  },
+  "license": "MIT",
+  "author": "parsa dehghan pour",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.17",
+    "tailwindcss": "^4.1.17"
+  }
+}
