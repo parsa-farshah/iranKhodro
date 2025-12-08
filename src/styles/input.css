@@ -1,2 +1,73 @@
 @import "tailwindcss";
 /* npx @tailwindcss/cli -i ./src/styles/input.css -o ./src/styles/output.css --watch */
+
+@font-face {
+  font-family: peydaBlack;
+  src: url(../fonts/Peyda-Black.ttf);
+}
+@font-face {
+  font-family: peydaBold;
+  src: url(../fonts/Peyda-Bold.ttf);
+}
+@font-face {
+  font-family: peydaExtraBold;
+  src: url(../fonts/Peyda-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: peydaextraLight;
+  src: url(../fonts/peyda-extralight.ttf);
+}
+@font-face {
+  font-family: peydaLight;
+  src: url(../fonts/peyda-light.ttf);
+}
+@font-face {
+  font-family: peydaMedium;
+  src: url(../fonts/Peyda-Medium.ttf);
+}
+@font-face {
+  font-family: peydaRegular;
+  src: url(../fonts/Peyda-Regular.ttf);
+}
+@font-face {
+  font-family: peydaSemiBold;
+  src: url(../fonts/Peyda-SemiBold.ttf);
+}
+@font-face {
+  font-family: peydaThin;
+  src: url(../fonts/Peyda-Thin.ttf);
+}
+
+@layer utilities {
+  .peydaBlack {
+    font-family: peydaBlack;
+  }
+  .peydaBold {
+    font-family: peydaBold;
+  }
+  .peydaExtraBold {
+    font-family: peydaExtraBold;
+  }
+  .peydaextraLight {
+    font-family: peydaextraLight;
+  }
+  .peydaMedium {
+    font-family: peydaMedium;
+  }
+  .peydaRegular {
+    font-family: peydaRegular;
+  }
+  .peydaSemiBold {
+    font-family: peydaSemiBold;
+  }
+  .peydaThin {
+    font-family: peydaThin;
+  }
+  .bg-primary200 {
+    @apply bg-[#8AA7C3];
+  }
+  .text-primary50 {
+    @apply text-[#E6ECF2];
+  }
+}

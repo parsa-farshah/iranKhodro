@@ -173,14 +173,29 @@
   .absolute {
     position: absolute;
   }
+  .relative {
+    position: relative;
+  }
+  .top-1 {
+    top: calc(var(--spacing) * 1);
+  }
+  .top-1\/2 {
+    top: calc(1/2 * 100%);
+  }
   .top-2 {
     top: calc(var(--spacing) * 2);
+  }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
   }
   .left-1 {
     left: calc(var(--spacing) * 1);
   }
   .left-1\/2 {
     left: calc(1/2 * 100%);
+  }
+  .left-4 {
+    left: calc(var(--spacing) * 4);
   }
   .mr-8 {
     margin-right: calc(var(--spacing) * 8);
@@ -209,9 +224,6 @@
   .h-14 {
     height: calc(var(--spacing) * 14);
   }
-  .h-16 {
-    height: calc(var(--spacing) * 16);
-  }
   .h-\[600px\] {
     height: 600px;
   }
@@ -221,20 +233,8 @@
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
-  .w-6 {
-    width: calc(var(--spacing) * 6);
-  }
   .w-8 {
     width: calc(var(--spacing) * 8);
-  }
-  .w-12 {
-    width: calc(var(--spacing) * 12);
-  }
-  .w-\[8px\] {
-    width: 8px;
-  }
-  .w-\[80px\] {
-    width: 80px;
   }
   .w-\[85\%\] {
     width: 85%;
@@ -242,17 +242,8 @@
   .w-\[90px\] {
     width: 90px;
   }
-  .w-\[120px\] {
-    width: 120px;
-  }
-  .w-\[129px\] {
-    width: 129px;
-  }
   .w-\[150px\] {
     width: 150px;
-  }
-  .w-\[215px\] {
-    width: 215px;
   }
   .w-full {
     width: 100%;
@@ -260,12 +251,30 @@
   .border-collapse {
     border-collapse: collapse;
   }
+  .-translate-1 {
+    --tw-translate-x: calc(var(--spacing) * -1);
+    --tw-translate-y: calc(var(--spacing) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-1\/2 {
+    --tw-translate-x: calc(calc(1/2 * 100%) * -1);
+    --tw-translate-y: calc(calc(1/2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
   .-translate-x-1 {
     --tw-translate-x: calc(var(--spacing) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-x-1\/2 {
     --tw-translate-x: calc(calc(1/2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-1 {
+    --tw-translate-y: calc(var(--spacing) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-1\/2 {
+    --tw-translate-y: calc(calc(1/2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .cursor-pointer {
@@ -279,6 +288,9 @@
   }
   .justify-between {
     justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
@@ -308,6 +320,9 @@
   .bg-black {
     background-color: var(--color-black);
   }
+  .bg-white {
+    background-color: var(--color-white);
+  }
   .bg-\[url\(\.\.\/images\/bgHeaderMobile\.png\)\] {
     background-image: url(../images/bgHeaderMobile.png);
   }
@@ -323,6 +338,9 @@
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
@@ -330,6 +348,18 @@
   .text-xs {
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  .text-\[10px\] {
+    font-size: 10px;
+  }
+  .text-\[\#828282\] {
+    color: #828282;
+  }
+  .text-\[12\] {
+    color: 12;
+  }
+  .text-black {
+    color: var(--color-black);
   }
   .text-white {
     color: var(--color-white);
@@ -340,6 +370,10 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .outline-0 {
+    outline-style: var(--tw-outline-style);
+    outline-width: 0px;
   }
   .backdrop-blur-md {
     --tw-backdrop-blur: blur(var(--blur-md));
@@ -363,11 +397,6 @@
   .md\:h-20 {
     @media (width >= 48rem) {
       height: calc(var(--spacing) * 20);
-    }
-  }
-  .md\:w-\[215px\] {
-    @media (width >= 48rem) {
-      width: 215px;
     }
   }
   .md\:bg-\[url\(\.\.\/images\/bgHeaderDesktop\.png\)\] {
@@ -429,6 +458,74 @@
     @media (width >= 96rem) {
       margin-inline: auto;
     }
+  }
+}
+@font-face {
+  font-family: peydaBlack;
+  src: url(../fonts/Peyda-Black.ttf);
+}
+@font-face {
+  font-family: peydaBold;
+  src: url(../fonts/Peyda-Bold.ttf);
+}
+@font-face {
+  font-family: peydaExtraBold;
+  src: url(../fonts/Peyda-ExtraBold.ttf);
+}
+@font-face {
+  font-family: peydaextraLight;
+  src: url(../fonts/peyda-extralight.ttf);
+}
+@font-face {
+  font-family: peydaLight;
+  src: url(../fonts/peyda-light.ttf);
+}
+@font-face {
+  font-family: peydaMedium;
+  src: url(../fonts/Peyda-Medium.ttf);
+}
+@font-face {
+  font-family: peydaRegular;
+  src: url(../fonts/Peyda-Regular.ttf);
+}
+@font-face {
+  font-family: peydaSemiBold;
+  src: url(../fonts/Peyda-SemiBold.ttf);
+}
+@font-face {
+  font-family: peydaThin;
+  src: url(../fonts/Peyda-Thin.ttf);
+}
+@layer utilities {
+  .peydaBlack {
+    font-family: peydaBlack;
+  }
+  .peydaBold {
+    font-family: peydaBold;
+  }
+  .peydaExtraBold {
+    font-family: peydaExtraBold;
+  }
+  .peydaextraLight {
+    font-family: peydaextraLight;
+  }
+  .peydaMedium {
+    font-family: peydaMedium;
+  }
+  .peydaRegular {
+    font-family: peydaRegular;
+  }
+  .peydaSemiBold {
+    font-family: peydaSemiBold;
+  }
+  .peydaThin {
+    font-family: peydaThin;
+  }
+  .bg-primary200 {
+    background-color: #8AA7C3;
+  }
+  .text-primary50 {
+    color: #E6ECF2;
   }
 }
 @property --tw-translate-x {
