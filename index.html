@@ -9,7 +9,7 @@
   <body class="bg-black text-white">
     <!-- all sections -->
     <nav
-      class="w-[85%] h-14 md:h-20 rounded-2xl bg-[#FFFFFF1A] absolute left-1/2 top-2 -translate-x-1/2 p-2 backdrop-blur-md 2xl:container 2xl:mx-auto"
+      class="w-[90%] h-14 md:h-20 rounded-2xl bg-[#FFFFFF1A] absolute left-1/2 top-2 -translate-x-1/2 p-2 backdrop-blur-md 2xl:container 2xl:mx-auto"
     >
       <!------------------ mobile section ---------------------------->
       <div class="w-full h-full flex items-center justify-between md:hidden">
@@ -87,8 +87,44 @@
     </nav>
     <!-------------------------------------- haeder section ------------------------>
     <header
-      class="w-full h-[600px] bg-[url(../images/bgHeaderMobile.png)] md:bg-[url(../images/bgHeaderDesktop.png)] bg-cover bg-center"
-    ></header>
+      class="w-full h-[600px] bg-[url(../images/bgHeaderMobile.png)] md:bg-[url(../images/bgHeaderDesktop.png)] bg-cover bg-center pt-40 md:pt-48"
+    >
+      <div class="px-6 md:px-[5%]">
+        <p
+          class="text-primary50 text-3xl md:text-5xl peydaExtraBold leading-10 md:leading-20"
+        >
+          <span class="text-brand">راه</span> تو را <br />
+          می خواند...
+        </p>
+      </div>
+      <!-- buttons -->
+      <div
+        class="w-[90%] h-[34px] flex items-center justify-center gap-2 md:mt-8 md:justify-start md:px-[5%] mt-32"
+      >
+        <!-- right -->
+        <div
+          class="w-[133px] h-full rounded-lg bg-primary500 flex gap-2 justify-center items-center cursor-pointer"
+        >
+          <span class="text-xs">مشاهده محصولات</span>
+          <img
+            class="w-[18px] h-[18px]"
+            src="src/icons/Car.png"
+            alt="car icon"
+          />
+        </div>
+        <!-- left -->
+        <div
+          class="w-[104px] h-full rounded-lg bg-primary200 flex gap-2 justify-center items-center cursor-pointer"
+        >
+          <span class="text-xs mb-1">شرایط فروش</span>
+          <img
+            class="w-[18px] h-[18px]"
+            src="src/icons/Arrow.png"
+            alt="car icon"
+          />
+        </div>
+      </div>
+    </header>
   </body>
   <script src="src/js/index.js"></script>
 </html>
