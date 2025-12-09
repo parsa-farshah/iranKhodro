@@ -70,10 +70,25 @@
   .bg-primary500 {
     @apply bg-[#003F7D];
   }
+  .bg2 {
+    @apply bg-[#E1E4E7];
+  }
+  .darkBlueTxt {
+    @apply text-[#1C1F26];
+  }
   .text-primary50 {
     @apply text-[#E6ECF2];
   }
   .text-brand {
     @apply text-[#003F7D];
+  }
+  .txtGray {
+    @apply text-[#4A4F58];
+  }
+  .txtBlack {
+    @apply text-[#101010];
+  }
+  .shadowbox {
+    box-shadow: 0px 0px 10px #ffffffd0;
   }
 }
