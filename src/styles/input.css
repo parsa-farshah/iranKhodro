@@ -88,6 +88,9 @@
   .txtBlack {
     @apply text-[#101010];
   }
+  .txtDarkBlue{
+    @apply text-[#1C1F26]
+  }
   .shadowbox {
     box-shadow: 0px 0px 10px #ffffffd0;
   }

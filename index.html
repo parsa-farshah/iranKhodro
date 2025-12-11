@@ -156,10 +156,10 @@
       <!-------------------------------- end sections on header ------------------->
     </header>
     <!-- main -->
-    <main class="w-full px-[5%] 2xl:px-[1%] 2xl:container 2xl:mx-auto">
-      <!-- logo -->
+    <main class="w-full 2xl:container 2xl:mx-auto">
+      <!--------------------------------------- logo ------------------------->
       <figure
-        class="w-20 h-80 md:w-[190px] md:h-[190px] mx-auto mt-32 md:mt-16"
+        class="w-20 h-80 px-[5%] 2xl:px-[1%] md:w-[190px] md:h-[190px] mx-auto mt-32 md:mt-16"
       >
         <img
           class="w-full h-full object-contain"
@@ -168,7 +168,7 @@
         />
       </figure>
       <!--------------------------------------- products -------------------->
-      <div class="w-full">
+      <div class="w-full px-[5%] 2xl:px-[1%]">
         <!-- txt -->
         <div class="w-full flex justify-between items-center">
           <h3 class="text-xl peydaBold txtBlack">جدیدترین محصولات</h3>
@@ -225,6 +225,46 @@
         </div>
       </div>
       <!--------------------------------------- end products ---------------->
+
+      <!---------------------------------------- about dena ------------------>
+      <div
+        class="w-full h-[453px] md:h-[682px] px-[5%] 2xl:px-[1%] pt-[69px] md:pt-[157px] relative overflow-hidden"
+      >
+        <img
+          class="w-full h-full absolute top-0 left-0 md:hidden"
+          src="src/images/aboutDenaMobile.png"
+          alt=""
+        />
+        <img
+          class="w-full h-full absolute top-0 left-0 hidden md:block"
+          src="src/images/aboutDena.png"
+          alt=""
+        />
+        <div
+          class="w-[250px] h-[400px] md:w-[404px] md:h-[368px] rounded-2xl bg-[#FFFFFF1A] backdrop-blur-md px-6 py-2"
+        >
+          <div class="flex items-center gap-4 h-[72px]">
+            <span class="text-[32px] peydaBold txtDarkBlue">دنا</span>
+            <div class="flex flex-col text-lg peydaBold txtDarkBlue">
+              <span>موتور قدرتمند</span>
+              <span>توربو شارژ EF7</span>
+            </div>
+          </div>
+          <!-- paragraph -->
+          <p class="mt-2 text-primary50 peydaMedium h-[224px]">
+            دنا پلاس اتومات آپشنال یکی از خودروهای پیشرفته و محبوب شرکت
+            ایران‌خودرو است که با ترکیبی از طراحی مدرن، امکانات رفاهی گسترده و
+            فناوری‌های پیشرفته به بازار عرضه شده است. این سدان ایرانی با تمرکز
+            بر راحتی، ایمنی و عملکرد، گزینه‌ای ایده‌آل برای افرادی است که به
+            دنبال خودرویی مجهز و باکیفیت هستند.
+          </p>
+          <!-- button -->
+          <button class="w-full h-10 rounded-lg bg-primary500 cursor-pointer">
+            مشخصات
+          </button>
+        </div>
+      </div>
+      <!----------------------------------------- about dena ------------------->
     </main>
   </body>
   <script src="src/js/index.js"></script>
