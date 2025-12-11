@@ -70,6 +70,9 @@
   .bg-primary500 {
     @apply bg-[#003F7D];
   }
+  .bgDarkBlue {
+    @apply bg-[#1C1F26];
+  }
   .bg2 {
     @apply bg-[#E1E4E7];
   }
@@ -88,8 +91,11 @@
   .txtBlack {
     @apply text-[#101010];
   }
-  .txtDarkBlue{
-    @apply text-[#1C1F26]
+  .txtDarkBlue {
+    @apply text-[#1C1F26];
+  }
+  .textLightGray{
+    @apply text-[#8A8F99]
   }
   .shadowbox {
     box-shadow: 0px 0px 10px #ffffffd0;
