@@ -574,9 +574,19 @@
       display: none;
     }
   }
+  .md\:h-10 {
+    @media (width >= 48rem) {
+      height: calc(var(--spacing) * 10);
+    }
+  }
   .md\:h-20 {
     @media (width >= 48rem) {
       height: calc(var(--spacing) * 20);
+    }
+  }
+  .md\:h-\[40px\] {
+    @media (width >= 48rem) {
+      height: 40px;
     }
   }
   .md\:h-\[190px\] {
