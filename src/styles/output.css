@@ -1221,6 +1221,16 @@
       background-image: url(../images/bgHeaderDesktop.png);
     }
   }
+  .md\:from-5\% {
+    @media (width >= 48rem) {
+      --tw-gradient-from-position: 5%;
+    }
+  }
+  .md\:to-45\% {
+    @media (width >= 48rem) {
+      --tw-gradient-to-position: 45%;
+    }
+  }
   .md\:px-\[5\%\] {
     @media (width >= 48rem) {
       padding-inline: 5%;
